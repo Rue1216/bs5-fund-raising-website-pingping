@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon-16x16.png" type="image/x-icon"/>
+    <title>拼拼 - 募資網站</title>
+    <!-- import CSS -->
+    <link rel="stylesheet" href="scss/all.css">
+    <!-- import font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header section -->
+    <header class="border-bottom border-5 border-warning bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- brand-logo -->
+                    <a class="navbar-brand" href="#">
+                        <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/logo.jpg" alt="brand-logo" width="111px" height="40px">
+                    </a>
+                  <button class="navbar-toggler border-0 rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link px-4" aria-current="page" href="#">關於</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-4" href="#">挖寶</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link px-4" href="#">我有個大膽的想法</a>
+                      </li>
+                    </ul>
+                    <div class="d-flex justify-content-end">
+                        <!-- login -->
+                        <button class="btn btn-warning rounded-pill me-4 px-4 btn-warning-hover" type="button" data-bs-toggle="modal" data-bs-target="#login">登入</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login-popup-window" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content rounded-8 border-0 border-top border-4 border-warning">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="login">登入</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- 登入表單 -->
+                                    <form class="needs-validation" novalidate>
+                                        <div class="mb-3">
+                                          <label for="account" class="form-label">帳號</label>
+                                          <input type="text" class="form-control" id="account" required>
+                                          <div class="invalid-feedback">
+                                              請輸入帳號
+                                          </div>
+                                        </div>
+                                        <div class="mb-3">
+                                          <label for="password" class="form-label">密碼</label>
+                                          <input type="password" class="form-control" id="password" required>
+                                          <div class="invalid-feedback">
+                                            請輸入密碼
+                                            </div>
+                                            <a href="#" class="text-decoration-none link-secondary pt-2">忘記密碼？</a>
+                                        </div>
+                                        <button type="submit" class="btn btn-warning w-100 rounded-pill btn-warning-hover fw-bold fs-5">登入</button>
+                                      </form>
+                                    <!-- 跳轉到註冊頁面 -->
+                                    <div class="position-relative mt-5 mb-4">
+                                        <div class="progress" style="height: 1px;">
+                                            <div class="progress-bar bg-secondary position-absolute" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="bg-white text-secondary position-absolute top-0 start-50 translate-middle">還沒有帳號？<span><a href="#join-us" class="link-danger text-decoration-none">註冊一個帳號</a></span></p>
+                                    </div>
+                                </div>
+                                
+                                    
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <button class="btn rounded-pill btn-outline-secondary border-2 px-4 btn-outline-secondary-hover" type="button">註冊</button>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <!-- product section -->
+        <section class="py-3 py-md-5 bg-light">
+            <div class="container">
+                <span class="badge bg-secondary rounded-3 px-3">魔法科技</span>
+                <h1 class="title-spacing mb-4">拍出會動的照片｜ LivePhotos 魔法拍立得</h1>
+            <div class="row align-items-center">
+                <!-- 產品照片 -->
+                <div class="col-md-auto col-lg-7 my-4">
+                    <img class="img-fluid rounded-32" src="https://hexschool.github.io/boootstrap5WebLayout/assets/produt_image.jpg" alt="product">
+                </div>
+                <div class="col-md col-lg-5">
+                    <p class="text-dark lh-sm">目標 <span class="Baloo-Tamma-2">$600,000</span></p>
+                    <p class="h2 Baloo-Tamma-2 lh-sm">$280,047</p>
+                    <!-- 進度條 -->
+                    <div class="progress rounded-pill mb-4">
+                        <div class="progress-bar bg-warning text-secondary" role="progressbar" style="width: 41%;" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">41%</div>
+                    </div>
+                    <!-- 贊助人數/募資倒數 -->
+                    <div class="row my-3">
+                        <div class="col-6">
+                            <p class="text-secondary lh-sm">贊助人數</p>
+                            <span class="Baloo-Tamma-2 h2">1,374</span><span class="fs-4 fw-bold"> 人</span>
+                        </div>
+                        <div class="col-6">
+                            <p class="text-secondary lh-sm">募資倒數</p>
+                            <span class="Baloo-Tamma-2 h2">27</span><span class="fs-4 fw-bold"> 天</span>
+                        </div>
+                    </div>
+                    <!-- 各式標章 tooltips -->
+                    <ul class="d-flex justify-content-between justify-content-md-start list-unstyled mb-3 mt-2">
+                        <li class="me-md-4">
+                            <a href="#" class="link-dark text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="認證標章">
+                                <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good01.svg" alt="認證標章圖標">
+                                <span class="d-md-none align-bottom">認證標章</span>
+                            </a>
+                        </li>
+                        <li class="me-md-4">
+                            <a href="#" class="link-dark text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="品質保證">
+                                <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good02.svg" alt="品質保證圖標">
+                                <span class="d-md-none align-bottom">品質保證</span>
+                            </a>
+                        </li>
+                        <li class="me-md-4">
+                            <a href="#" class="link-dark text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="原生創意">
+                                <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good03.svg" alt="原生創意圖標">
+                                <span class="d-md-none align-bottom">原生創意</span>
+                            </a>
+                        </li>
+                        <li class="me-md-4">
+                            <a href="#" class="link-dark text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="人氣王">
+                                <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_good04.svg" alt="人氣王圖標">
+                                <span class="d-md-none align-bottom">人氣王</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- sponsor callout -->
+                    <div class="border-start p-3 mt-3 mb-4 border-3 border-warning rounded-3 bg-white text-dark">專案募資中！<br>在 <b>2021/06/14 23:59</b> 募資結束前，您都可以贊助我們！</div>
+                    <!-- buttons -->
+                    <div class="d-grid">
+                        <button class="btn btn-warning rounded-pill w-100 btn-lg mb-2 fw-bold btn-warning-hover" type="button">贊助專案</button>
+                    </div>
+                    <div class="row g-2">
+                        <div class="col-6 col-md-7">
+                            <button class="btn btn-lg border-2 btn-outline-secondary w-100 rounded-pill fw-bold btn-outline-secondary-hover" type="button"><span class="custom-heart"><i class="fas fa-heart"></i></span> 追蹤專案</button>
+                        </div>
+                        <div class="col-6 col-md-5">
+                            <button class="btn btn-lg border-2 btn-outline-secondary w-100 rounded-pill fw-bold btn-outline-secondary-hover" type="button"><span><i class="fas fa-share-alt"></i></span> 分享</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- tabs -->
+        <div class="sticky-top bg-white border-bottom border-top border-1">
+                <div class="container p-0 px-md-3">
+                    <ul class="nav d-md-flex justify-content-between justify-content-md-start" role="tablist" aria-orientation="vertical">
+                        <li class="nav-item">
+                            <a class="nav-link link-dark py-3 active" data-bs-toggle="pill" href="#tab-detail" role="tab" aria-controls="tab-detail" aria-selected="true" onclick="goToTab()">專案介紹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark py-3" data-bs-toggle="pill" href="#tab-qa" role="tab" aria-controls="tab-qa" aria-selected="false" onclick="goToTab()">常見問答</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark py-3" data-bs-toggle="pill" href="#tab-news" role="tab" aria-controls="tab-news" aria-selected="false" onclick="goToTab()">目前進度</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark py-3" data-bs-toggle="pill" href="#tab-comment" role="tab" aria-controls="tab-comment" aria-selected="false" onclick="goToTab()">留言</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+            
+         <!-- 下方主要區塊 -->
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="tab-content mb-5">
+                        <!-- tab - 專案介紹 -->
+                        <div class="tab-pane fade active show" id="tab-detail" role="tabpanel" aria-labelledby="detail-tab">
+                            <img class="img-fluid w-100" src="https://hexschool.github.io/boootstrap5WebLayout/assets/p1.jpg" alt="拿著相機的女孩">
+                            <h4 class="border-start border-4 border-warning mt-4 mb-1 ps-3 fw-bolder">施了魔法的照片</h4>
+                            <p class="lh-lg text-justify mt-2">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+                            <img class="img-fluid w-100" src="https://hexschool.github.io/boootstrap5WebLayout/assets/p2.jpg" alt="魔法拍立得產品照">
+                            <h4 class="border-start border-4 border-warning mt-4 mb-1 ps-3 fw-bolder">留下當下的美好</h4>
+                            <p class="lh-lg text-justify mt-2">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+                        </div>
+                        <!-- tab - 常見問答 -->
+                        <div class="tab-pane fade" id="tab-qa" role="tabpanel" aria-labelledby="qa-tab">
+                            <ul class="accordion accordion-flush list-unstyled" id="qa-accordion">
+                                <!-- 問題一 -->
+                                <li class="accordion-item mb-3 accordion-decoration">
+                                  <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="q1">
+                                        <span class="icon-size bg-warning text-dark rounded-4 fw-bold text-center Baloo-Tamma-2 lh-lg me-3">Q1</span>影片拍完之後可以編輯嗎？
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#qa-accordion">
+                                    <p class="accordion-body text-secondary lh-lg mb-0 ms-lg-5">可以進行簡易的編輯，內建 5 種濾鏡，影片秒數有3秒、5秒、10秒可以選擇，拍完的當下可以編輯要印出來的影片範圍哦！</p>
+                                  </div>
+                                </li>
+                                <!-- 問題二 -->
+                                <li class="accordion-item mb-3 accordion-decoration">
+                                  <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="q2">
+                                        <span class="icon-size bg-warning text-dark rounded-4 fw-bold text-center Baloo-Tamma-2 lh-lg me-3">Q2</span>有提供保固或維修服務嗎？
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#qa-accordion">
+                                    <p class="accordion-body text-secondary lh-lg mb-0 ms-lg-5">提供產品售後服務，對產品本體(不含配件、線材)提供二年保固服務。產品因意外或人為不當使用或未經授權維修等非依使用手冊使用而造成產品損壞者，則不在保固範圍之內，得向客戶酌收產品維修服務費用。</p>
+                                  </div>
+                                </li>
+                                <!-- 問題三 -->
+                                <li class="accordion-item mb-3 accordion-decoration">
+                                  <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="q3">
+                                        <span class="icon-size bg-warning text-dark rounded-4 fw-bold text-center Baloo-Tamma-2 lh-lg me-3">Q3</span>補充包底片要去哪裡購買呢？
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#qa-accordion">
+                                    <p class="accordion-body text-secondary lh-lg mb-0 ms-lg-5">本產品可以兼容 i-type 及 600 相片，各大網路平台皆有販售。</p>
+                                  </div>
+                                </li>
+                                <!-- 問題四 -->
+                                <li class="accordion-item mb-3 accordion-decoration">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="q4">
+                                        <span class="icon-size bg-warning text-dark rounded-4 fw-bold text-center Baloo-Tamma-2 lh-lg me-3">Q4</span>印出來的拍立得照片需要充電嗎？
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#qa-accordion">
+                                      <p class="accordion-body text-secondary lh-lg mb-0 ms-lg-5">不用，取出後稍微搖晃，相片與空氣接觸數秒後便會產生圖像顏色。</p>
+                                    </div>
+                                </li>
+                                <!-- 問題五 -->
+                                <li class="accordion-item mb-3 accordion-decoration">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="q5">
+                                        <span class="icon-size bg-warning text-dark rounded-4 fw-bold text-center Baloo-Tamma-2 lh-lg me-3">Q5</span>運送方式及付款方式有哪些呢？
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#qa-accordion">
+                                      <p class="accordion-body text-secondary lh-lg mb-0 ms-lg-5">可以選擇超商取貨及宅配，付款方式有銀行轉帳及信用卡支付。</p>
+                                    </div>
+                                </li>
+                                <!-- 問題六 -->
+                                <li class="accordion-item mb-3 accordion-decoration">
+                                    <h2 class="accordion-header" id="flush-headingSix">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="q6">
+                                        <span class="icon-size bg-warning text-dark rounded-4 fw-bold text-center Baloo-Tamma-2 lh-lg me-3">Q6</span>退換貨方式及規則
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#qa-accordion">
+                                      <p class="accordion-body text-secondary lh-lg mb-0 ms-lg-5">因商品封條多為一次性包裝，商品退貨時必須回復原狀，亦即必須回復至您收到商品時的原始狀態，且會視回收的商品狀態另外酌收額外的整新費用，請您務必確認有購買需求後再行拆封，感謝您的配合。</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- tab - 目前進度 -->
+                        <div class="tab-pane fade" id="tab-news" role="tabpanel" aria-labelledby="news-tab">
+                            <ul class="list-unstyled">
+                                <li class="card mb-3 rounded-4">
+                                    <div class="row g-0">
+                                        <div class="col-auto">
+                                          <img class="d-lg-none d-xl-block" src="https://hexschool.github.io/boootstrap5WebLayout/assets/news01.jpg" alt="手拿著照片對比風景的圖樣">
+                                        </div>
+                                        <div class="col">
+                                          <div class="card-body">
+                                            <h3 class="mb-0 h6">高雄體驗會｜免費參加送帆布袋</h3>
+                                            <small class="text-secondary Baloo-Tamma-2 my-2 d-block w-100">2021-6-20</small>
+                                            <p class="card-text text-secondary my-3 small d-none d-md-block pb-3">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
+                                            <a href="#" class="card-text link-danger Baloo-Tamma-2 small text-decoration-none pb-2 position-absolute bottom-0">MORE</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </li>
+                                <li class="card mb-3 rounded-4">
+                                    <div class="row g-0">
+                                        <div class="col-auto">
+                                          <img class="d-lg-none d-xl-block" src="https://hexschool.github.io/boootstrap5WebLayout/assets/news02.jpg" alt="底片散落在桌上的圖樣">
+                                        </div>
+                                        <div class="col">
+                                          <div class="card-body">
+                                            <h3 class="mb-0 h6">高雄體驗會｜免費參加送帆布袋</h3>
+                                            <small class="text-secondary Baloo-Tamma-2 my-2 d-block w-100">2021-6-20</small>
+                                            <p class="card-text text-secondary my-3 small d-none d-md-block pb-3">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
+                                            <a href="#" class="card-text link-danger Baloo-Tamma-2 small text-decoration-none pb-2 position-absolute bottom-0">MORE</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </li>
+                                <li class="card mb-3 rounded-4">
+                                    <div class="row g-0">
+                                        <div class="col-auto">
+                                          <img class="d-lg-none d-xl-block" src="https://hexschool.github.io/boootstrap5WebLayout/assets/news03.jpg" alt="拍立得的圖樣">
+                                        </div>
+                                        <div class="col">
+                                          <div class="card-body">
+                                            <h3 class="mb-0 h6">高雄體驗會｜免費參加送帆布袋</h3>
+                                            <small class="text-secondary Baloo-Tamma-2 my-2 d-block w-100">2021-6-20</small>
+                                            <p class="card-text text-secondary my-3 small d-none d-md-block pb-3">大家安安！謝謝每位贊助者的熱情支持，讓我們離夢想更進一步，我們將於下個月舉辦體驗會，歡迎各位踴躍參與！</p>
+                                            <a href="#" class="card-text link-danger Baloo-Tamma-2 small text-decoration-none pb-2 position-absolute bottom-0">MORE</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- tab - 留言 -->
+                        <div class="tab-pane fade" id="tab-comment" role="tabpanel" aria-labelledby="comment-tab">
+                            <!-- callout -->
+                            <div class="bg-light border-start border-3 rounded-4 border-warning">
+                                <p class="p-3">只有本專案的贊助者才可以留言哦，如果有任何專案相關的問題，歡迎<a href="#contact" class="link-danger text-decoration-none">聯絡提案人</a>！</p>
+                            </div>
+                            <!-- messages -->
+                            <ul class="list-unstyled">
+                                <li class="border rounded-8 message-border p-3 mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle me-3" src="https://hexschool.github.io/boootstrap5WebLayout/assets/user_img01.jpg" alt="廖小杰的頭像">
+                                        <div>
+                                            <p class="h5">廖小杰</p>
+                                            <small class="text-secondary time-stamp">2020年5月22日 11：32</small>
+                                        </div>
+                                    </div>
+                                    <p class="my-3">晚上起床上廁所看到照片裡的人一直動其實有點恐怖，希望可以有暫停或是定時的功能！</p>
+                                    <div class="bg-light p-3 rounded-4">
+                                        <small class="text-danger">提案者回覆</small>
+                                        <p class="mb-0">你要嘛起床的時候開燈，要嘛給我們更多錢開發阿</p>
+                                    </div>
+                                </li>
+                                <li class="border rounded-8 message-border mb-3">
+                                    <div class="d-flex align-items-center p-3">
+                                        <img class="rounded-circle me-3" src="https://hexschool.github.io/boootstrap5WebLayout/assets/user_img02.jpg" alt="使用者頭像">
+                                        <div>
+                                            <p class="h5">卡阿伯</p>
+                                            <small class="text-secondary time-stamp">2020年5月22日 11：32</small>
+                                        </div>
+                                    </div>
+                                    <p class="px-3">希望有更多花色可以選擇！我女兒最近喜歡綠色</p>
+                                </li>
+                                <li class="border rounded-8 message-border mb-3">
+                                    <div class="d-flex align-items-center p-3">
+                                        <img class="rounded-circle me-3" src="https://hexschool.github.io/boootstrap5WebLayout/assets/user_img02.jpg" alt="使用者頭像">
+                                        <div>
+                                            <p class="h5">賈師</p>
+                                            <small class="text-secondary time-stamp">2020年5月22日 11：32</small>
+                                        </div>
+                                    </div>
+                                    <p class="px-3">可以做個相簿功能嗎？拍出好看的影片再讓我們選擇要印出哪一張這樣</p>
+                                </li>
+                                <li class="border rounded-8 message-border mb-3">
+                                    <div class="d-flex align-items-center p-3">
+                                        <img class="rounded-circle me-3" src="https://hexschool.github.io/boootstrap5WebLayout/assets/user_img02.jpg" alt="使用者頭像">
+                                        <div>
+                                            <p class="h5">俊俊</p>
+                                            <small class="text-secondary time-stamp">2020年5月22日 11：32</small>
+                                        </div>
+                                    </div>
+                                    <p class="px-3">test123 看一下我是不是真的可以留言</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 手機版 逼人贊助區 -->
+                    <div class="d-lg-none mb-5">
+                        <div class="position-sticky border border-1 p-3 mb-5 rounded-8">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img class="border rounded-circle border-4 border-warning" src="https://hexschool.github.io/boootstrap5WebLayout/assets/store_img.jpg" alt="缺錢事務所的頭像">
+                                <div class="px-3">
+                                    <p class="h4 fw-bold">缺錢事務所</p>
+                                    <p class="h5">已發起 <strong>1</strong> 個專案</p>
+                                </div>
+                            </div>
+                            <p class="h5 my-3 lh-sm d-none d-md-block">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex mt-3">
+                                    <a href="#" class="rounded-circle btn-secondary btn-outline-secondary-hover icon-size text-center text-white me-2"><i class="fab fa-facebook-f lh-lg"></i></a>
+                                    <a href="#" class="rounded-circle btn-secondary btn-outline-secondary-hover icon-size text-center text-white me-2"><i class="fab fa-youtube lh-lg"></i></a>
+                                </div>
+                                <button class="btn btn-outline-secondary rounded-pill btn-outline-secondary-hover"><i class="far fa-comment-dots"></i> 聯絡我們</button>
+                            </div>
+                        </div>
+                        <p class="border-start border-end border-warning border-4 rounded-8 bg-light text-center fw-bolder py-2 h4">選擇一個方案來支持</p>
+                        <!-- 方案卡片 -->
+                        <ul class="list-unstyled">
+                            <li class="card mt-3 rounded-8"><img src="https://hexschool.github.io/boootstrap5WebLayout/assets/plan_img.jpg" class="img-fluid" alt="團購優惠的字樣">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between border-bottom card-border border-1">
+                                        <p>限時優惠</p>
+                                        <p>2 days 20:05:20</p>
+                                    </div>
+                                  <h3 class="h5 card-title fw-bolder mt-3">買一送一，只有兩百組別錯過</h3>
+                                  <p class="h5 fw-bolder Baloo-Tamma-2">NT$ 1,600</p>
+                                  <span class="badge rounded-3 px-3 text-secondary bg-badge">已被贊助88次</span>
+                                  <span class="badge bg-secondary rounded-3 px-3">限量<span class="text-warning">200</span>個</span>
+                                  <p class="mt-3 card-text text-secondary">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                                  <div class="d-grid">
+                                    <button class="btn btn-warning rounded-pill fw-bold btn-warning-hover">贊助此專案</button>
+                                  </div>
+                                </div>
+                            </li>
+                            <li class="card mt-3 rounded-8"><img src="https://hexschool.github.io/boootstrap5WebLayout/assets/plan_img.jpg" class="img-fluid" alt="團購優惠的字樣">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between border-bottom card-border border-1">
+                                        <p>限時優惠</p>
+                                        <p>2 days 20:05:20</p>
+                                    </div>
+                                  <h3 class="h5 card-title fw-bolder mt-3">買一送一，只有兩百組別錯過</h3>
+                                  <p class="h5 fw-bolder Baloo-Tamma-2">NT$ 1,600</p>
+                                  <span class="badge rounded-3 px-3 text-secondary bg-badge">已被贊助88次</span>
+                                  <span class="badge bg-secondary rounded-3 px-3">限量<span class="text-warning">200</span>個</span>
+                                  <p class="mt-3 card-text text-secondary">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                                  <div class="d-grid">
+                                    <button class="btn btn-warning rounded-pill fw-bold btn-warning-hover">贊助此專案</button>
+                                  </div>
+                                </div>
+                            </li>
+                            <li class="card mt-3 rounded-8"><img src="https://hexschool.github.io/boootstrap5WebLayout/assets/plan_img.jpg" class="img-fluid" alt="團購優惠的字樣">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between border-bottom card-border border-1">
+                                        <p>限時優惠</p>
+                                        <p>2 days 20:05:20</p>
+                                    </div>
+                                  <h3 class="h5 card-title fw-bolder mt-3">買一送一，只有兩百組別錯過</h3>
+                                  <p class="h5 fw-bolder Baloo-Tamma-2">NT$ 1,600</p>
+                                  <span class="badge rounded-3 px-3 text-secondary bg-badge">已被贊助88次</span>
+                                  <span class="badge bg-secondary rounded-3 px-3">限量<span class="text-warning">200</span>個</span>
+                                  <p class="mt-3 card-text text-secondary">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                                  <div class="d-grid">
+                                    <button class="btn btn-warning rounded-pill fw-bold btn-warning-hover">贊助此專案</button>
+                                  </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 合作圖標 -->
+                    <section class="mb-5">
+                        <div class="d-flex justify-content-center">
+                            <img src="https://hexschool.github.io/boootstrap5WebLayout/assets/icon_heart.svg" alt="合作圖標" width="43px" height="36px">
+                        </div>
+                        <div class="position-relative my-4">
+                            <div class="progress" style="height: 3px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h2 class="position-absolute top-0 start-50 text-center translate-middle bg-white px-3"> 贊助專案 </h2>
+                        </div>
+                    </section>
+                    
+                    <!-- 表單 -->
+                    <form id="form" class="needs-validation" novalidate>
+                        <!-- sponsor program -->
+                        <div class="mb-3">
+                            <label for="program" class="form-label">贊助方案</label>
+                            <select id="program" class="form-select bg-light border-0 text-secondary" aria-label="select program" required>
+                                <option value="1">方案一</option>
+                                <option value="2">方案二</option>
+                                <option value="3">方案三</option>
+                            </select>
+                            <div class="invalid-feedback">請選擇一個方案</div>
+                        </div>
+                        <!-- name -->
+                        <div class="mb-3">
+                            <label for="reciever-name" class="form-label">收件人姓名</label>
+                            <input type="text" class="form-control bg-light border-0 text-secondary" id="reciever-name" placeholder="王 小明" required>
+                            <div class="invalid-feedback">請輸入正確的收件人名稱</div>
+                        </div>
+                        <!-- phone number -->
+                        <div class="mb-3">
+                            <label for="phone-number" class="form-label">連絡電話</label>
+                            <input type="number" class="form-control bg-light border-0 text-secondary" id="phone-number" placeholder="0912345678" required>
+                            <div class="invalid-feedback">請輸入正確的電話號碼</div>
+                        </div>
+                        <!-- email address -->
+                        <div class="mb-3">
+                            <label for="contact-email" class="form-label">聯絡信箱</label>
+                            <input type="email" class="form-control bg-light border-0 text-secondary" id="contact-email" placeholder="exampleEmail@example.com" required>
+                            <div class="invalid-feedback">請輸入正確的郵件格式</div>
+                        </div>
+                        <!-- payment choices -->
+                        <div class="mb-3">
+                            <label for="payment" class="form-label">付款方式</label>
+                            <select id="payment" class="form-select bg-light border-0 text-secondary" aria-label="select payment" required>
+                              <option value="1">信用卡付款</option>
+                              <option value="2">貨到付款</option>
+                              <div class="invalid-feedback">請選擇一種付款方式</div>
+                            </select>
+                        </div>
+                        <!-- submit button -->
+                        <div class="mx-auto d-grid col-lg-4 col-xl-2">
+                            <button class="btn btn-lg btn-warning fw-bold w-100 rounded-pill mt-2 btn-warning-hover" type="submit">贊助專案</button>
+                        </div>
+                    </form>
+                
+                    </div>
+                <!-- 右邊 card 區塊 -->
+                <div class="d-lg-block col-lg-4 d-none">
+                    <div class="border border-1 p-3 mb-5 rounded-8">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <img class="border rounded-circle border-4 border-warning" src="https://hexschool.github.io/boootstrap5WebLayout/assets/store_img.jpg" alt="缺錢事務所的頭像">
+                                <div class="px-3">
+                                    <p class="h4 fw-bold">缺錢事務所</p>
+                                    <p class="h5">已發起 <strong>1</strong> 個專案</p>
+                                </div>
+                            </div>
+                            <p class="h5 my-3 lh-sm d-none d-md-block">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex">
+                                    <a href="#" class="rounded-circle btn-secondary btn-outline-secondary-hover icon-size text-center text-white me-2"><i class="fab fa-facebook-f lh-lg"></i></a>
+                                    <a href="#" class="rounded-circle btn-secondary btn-outline-secondary-hover icon-size text-center text-white me-2"><i class="fab fa-youtube lh-lg"></i></a>
+                                </div>
+                                <button class="btn btn-outline-secondary rounded-pill btn-outline-secondary-hover"><i class="far fa-comment-dots"></i> 聯絡我們</button>
+                            </div>
+                    </div>
+                    <p class="border-start border-end border-warning border-4 rounded-8 bg-light text-center fw-bolder py-2 h4">選擇一個方案來支持</p>
+                    <!-- 方案卡片 -->
+                    <ul class="list-unstyled">
+                            <li class="card mt-3 rounded-8"><img src="https://hexschool.github.io/boootstrap5WebLayout/assets/plan_img.jpg" class="img-fluid" alt="團購優惠的字樣">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between border-bottom card-border border-1">
+                                        <p>限時優惠</p>
+                                        <p>2 days 20:05:20</p>
+                                    </div>
+                                  <h3 class="h5 card-title fw-bolder mt-3">買一送一，只有兩百組別錯過</h3>
+                                  <p class="h5 fw-bolder Baloo-Tamma-2">NT$ 1,600</p>
+                                  <span class="badge rounded-3 px-3 text-secondary bg-badge">已被贊助88次</span>
+                                  <span class="badge bg-secondary rounded-3 px-3">限量<span class="text-warning">200</span>個</span>
+                                  <p class="mt-3 card-text text-secondary">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                                  <div class="d-grid">
+                                    <button class="btn btn-warning rounded-pill fw-bold btn-warning-hover">贊助此專案</button>
+                                  </div>
+                                </div>
+                            </li>
+                            <li class="card mt-3 rounded-8"><img src="https://hexschool.github.io/boootstrap5WebLayout/assets/plan_img.jpg" class="img-fluid" alt="團購優惠的字樣">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between border-bottom card-border border-1">
+                                        <p>限時優惠</p>
+                                        <p>2 days 20:05:20</p>
+                                    </div>
+                                  <h3 class="h5 card-title fw-bolder mt-3">買一送一，只有兩百組別錯過</h3>
+                                  <p class="h5 fw-bolder Baloo-Tamma-2">NT$ 1,600</p>
+                                  <span class="badge rounded-3 px-3 text-secondary bg-badge">已被贊助88次</span>
+                                  <span class="badge bg-secondary rounded-3 px-3">限量<span class="text-warning">200</span>個</span>
+                                  <p class="mt-3 card-text text-secondary">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                                  <div class="d-grid">
+                                    <button class="btn btn-warning rounded-pill fw-bold btn-warning-hover">贊助此專案</button>
+                                  </div>
+                                </div>
+                            </li>
+                            <li class="card mt-3 rounded-8"><img src="https://hexschool.github.io/boootstrap5WebLayout/assets/plan_img.jpg" class="img-fluid" alt="團購優惠的字樣">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between border-bottom card-border border-1">
+                                        <p>限時優惠</p>
+                                        <p>2 days 20:05:20</p>
+                                    </div>
+                                  <h3 class="h5 card-title fw-bolder mt-3">買一送一，只有兩百組別錯過</h3>
+                                  <p class="h5 fw-bolder Baloo-Tamma-2">NT$ 1,600</p>
+                                  <span class="badge rounded-3 px-3 text-secondary bg-badge">已被贊助88次</span>
+                                  <span class="badge bg-secondary rounded-3 px-3">限量<span class="text-warning">200</span>個</span>
+                                  <p class="mt-3 card-text text-secondary">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                                  <div class="d-grid">
+                                    <button class="btn btn-warning rounded-pill fw-bold btn-warning-hover">贊助此專案</button>
+                                  </div>
+                                </div>
+                            </li>
+                    </ul>                    
+                </div>
+            </div>
+        </div>
+        
+    </main>
+  
+    <!-- 手機版 最下面的贊助按鈕 -->
+    <div class="position-sticky bottom-0">
+        <button class="btn btn-warning btn-warning-hover btn-lg w-100 fw-bold mt-2 d-md-none"
+        id="bottomBtn" onclick="goForm()"
+        >贊助專案</button>
+    </div>
+    
+
+    <!-- footer section -->
+    <footer class="text-white text-center align-middle py-4">
+        <p>Copyright 2021 © 拼拼 All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <!-- import the functions -->
+    <script src="/script/all.js"></script>
+</body>
+</html>
